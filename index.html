@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        
+            <div class="header__top">
+                <img class="header__top--logo" src="./images/logo.svg" alt="">
+                <button class="header__top--try-btn btn-effect">Try It Free</button>
+            </div>
+            <div class="header__bottom">
+                <div class="header__bottom--text">
+                    <h3 class="header__bottom--text--h3">
+                        Build The Community Your Fans Will Love
+                    </h3>
+                    <p class="header__bottom--text--p">
+                        Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connection with your users as you engage in genuine discussion.
+                    </p>
+                    <button class="header__bottom--text--btn btn-effect">Get Started For Free</button>
+                </div>
+                <img class="header__bottom--img" src="./images/illustration-mockups.svg" alt="">
+            </div>
+        
+    </header>
+
+    <div id="content">
+        <div class="content__box">
+            <div class="content__box__text">
+                <h4 class="content__box__text__h4">
+                    Grow Together
+                </h4>
+                <p class="content__box__text__p">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, officiis est itaque perferendis magnam doloribus, repudiandae sint ipsum, nobis iusto illo doloremque consequuntur incidunt odit. Harum veritatis quaerat aliquam! Cupiditate!
+                </p>
+            </div>
+            <img class="content__box__img" src="./images/illustration-grow-together.svg" alt="">
+        </div>
+
+        <div class="content__box reverse">
+            <div class="content__box__text">
+                <h4 class="content__box__text__h4">
+                    Following Conversation
+                </h4>
+                <p class="content__box__text__p">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam expedita numquam facilis suscipit at tempore, voluptatibus non saepe aliquam mollitia itaque cumque ad nemo possimus! Neque facere minus rerum quod.
+                </p>
+            </div>
+            <img class="content__box__img" src="./images/illustration-flowing-conversation.svg" alt="">
+        </div>
+
+        <div class="content__box">
+            <div class="content__box__text">
+                <h4 class="content__box__text__h4">
+                    Your Users
+                </h4>
+                <p class="content__box__text__p">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, placeat, deserunt esse tenetur, nesciunt optio dolorem nostrum libero corrupti dolorum quis alias sint nulla ipsa sunt. Incidunt obcaecati voluptates quo?
+                </p>
+            </div>
+            <img class="content__box__img" src="./images/illustration-your-users.svg" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="question">
+            <h2 class="question__text">Ready To Build Your Community?</h2>
+            <button class="question__btn btn-effect">Get Strated For Free</button>
+        </div>
+        <img src="./images/white-logo.svg" alt="" class="footer__logo">
+        <div class="footer__main">
+            <div class="footer__info">
+                <div class="footer__info__line"><i class="fas fa-map-marker-alt"></i><p class="footer__info__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti voluptate eius ducimus, libero, dolores facilis explicabo ex itaque neque, officia unde.</p></div>
+                <div class="footer__info__line"><i class="fas fa-phone-alt"></i><p class="footer__info__p">+1-456-635-3590</p></div>
+                <div class="footer__info__line"><i class="fas fa-envelope"></i><p class="footer__info__p">fongoverated@gmail.com</p></div>
+            </div>
+
+            <div class="footer__link footer__link-1">
+                <a class="footer__link__p">About Us</a>
+                <a class="footer__link__p">What We Do</a>
+                <a class="footer__link__p">FAQ</a>
+            </div>
+    
+            <div class="footer__link footer__link-2">
+                <a class="footer__link__p">Career</a>
+                <a class="footer__link__p">Blog</a>
+                <a class="footer__link__p">Contact Us</a>
+            </div>
+            
+            <div class="footer__social">
+                <div class="footer__social__icon">
+                    <a><i class="fab fa-facebook-f"></i></a>
+                    <a><i class="fab fa-twitter"></i></a>
+                    <a><i class="fab fa-instagram"></i></a>
+                </div>
+                <span class="copyright"><i class="far fa-copyright"></i> Copyright 2018 Huddle. All rights reserved.</span>
+            </div>
+        </div>
+       
+    </footer>
+
+   
+
+
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '80px',
+            duration: 2000,
+            reset: true
+
+        })
+
+        sr.reveal('.header__bottom--text--h3',{})
+        sr.reveal('.header__bottom--img',{})
+        sr.reveal('.header__bottom--text--p',{delay:200})
+        sr.reveal('.header__bottom--text--btn',{delay:400})
+
+        
+
+        sr.reveal('#content>.content__box:nth-child(1)',{origin:'left'})
+        sr.reveal('#content>.content__box:nth-child(2)',{origin:'right',delay:100})
+        sr.reveal('#content>.content__box:nth-child(3)',{origin:'left',delay:200})
+
+        sr.reveal('.question',{delay:100,duration:1000})
+
+
+        sr.reveal('.footer__logo',{})
+        sr.reveal('.footer__info',{delay:200})
+        sr.reveal('.footer__info__line',{delay:100,interval:200})
+        
+        sr.reveal('.footer__link-1',{delay:300})
+        sr.reveal('.footer__link-2',{delay:400})
+        sr.reveal('.footer__link__p',{delay:100,interval:200})
+        sr.reveal('.footer__social__icon>a',{delay:600,interval:200})
+    </script>
+</body>
+</html>
